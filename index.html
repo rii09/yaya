@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Drink Matcha – Shop</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #f4f7f4;
+    }
+
+    /* NAVBAR */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #1b3d2f;
+        padding: 14px 22px;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+
+    nav .menu {
+        font-size: 14px;
+        display: flex;
+        gap: 18px;
+        opacity: 0.9;
+    }
+
+    nav .cart {
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+    nav .badge {
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        background: #ff5f5f;
+        color: white;
+        padding: 2px 7px;
+        border-radius: 50%;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+        margin-top: 90px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 260px;
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 700;
+        color: #1f3d2c;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        max-width: 350px;
+        margin: auto;
+        color: #4c5c4d;
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    /* SHOP GRID */
+    .shop-section {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 18px;
+        margin-bottom: 40px;
+    }
+
+    .product-card {
+        background: white;
+        border-radius: 16px;
+        padding: 14px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        text-align: center;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+        font-size: 16px;
+        color: #1f3d2c;
+        margin: 5px 0;
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #244e3b;
+    }
+
+    .btn-small {
+        background: #1b3d2f;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 13px;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.25s;
+    }
+
+    .btn-small:hover {
+        transform: translateY(-3px);
+        background: #244e3b;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #1b3d2f;
+        color: white;
+        text-align: center;
+        padding: 18px 10px;
+        margin-top: 20px;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <div>Drink Matcha</div>
+    <div class="menu">
+        <span>Home</span>
+        <span>Produk</span>
+        <span>Kontak</span>
+    </div>
+    <div class="cart">🛒<span class="badge">0</span></div>
+</nav>
+
+<div class="hero">
+    <img src="https://raw.githubusercontent.com/rii09/matcha/refs/heads/main/Ini-Kandungan-Gizi-Bubuk-Matcha-dan-Manfaat-untuk-Kesehatan.jpg" />
+    <div class="title">Fresh Matcha</div>
+    <div class="subtitle">Matcha tekstur creamy, aroma calming, dan dibuat fresh setiap hari.</div>
+</div>
+
+<!-- SHOP PRODUCTS GRID -->
+<div class="shop-section" id="menu">
+
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/rii09/matcha/refs/heads/main/6a833180-3281-4649-9f1c-fea7d28d1b02_copy.jpeg" />
+        <h3>Matcha Latte</h3>
+        <div class="price">Rp 18.000</div>
+        <a href="#" class="btn-small">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/rii09/matcha/refs/heads/main/DK6A3378.jpg" />
+        <h3>Brown Sugar Matcha</h3>
+        <div class="price">Rp 20.000</div>
+        <a href="#" class="btn-small">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/rii09/matcha/refs/heads/main/images.jpeg" />
+        <h3>Matcha Vanilla Cream</h3>
+        <div class="price">Rp 22.000</div>
+        <a href="#" class="btn-small">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+        <img src="https://raw.githubusercontent.com/rii09/matcha/refs/heads/main/iced-matcha-latte.jpg" />
+        <h3>Ice Matcha Strong</h3>
+        <div class="price">Rp 19.000</div>
+        <a href="#" class="btn-small">Add to Cart</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Drink Matcha Premium – All Rights Reserved
+</footer>
+
+</body>
+</html>
